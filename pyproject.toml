@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "finalproject-malygin-m25-555"
+version = "0.1.0"
+description = ""
+authors = ["Artyom Malygin"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+prettytable = "^3.17.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.14.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+packages = [{include = "finalproject_malygin_m25_555"}]
+
+[tool.poetry.scripts]
+project = "finalproject_malygin_m25_555.main:main"
