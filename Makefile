@@ -14,4 +14,4 @@ package-install:
 	poetry run python -m pip install dist/*.whl
 
 lint:
-	poetry run ruff check .
+	poetry run ruff check . --fix

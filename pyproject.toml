@@ -1,14 +1,19 @@
 [tool.poetry]
 name = "finalproject-malygin-m25-555"
 version = "0.1.0"
-description = ""
+description = "Currency Wallet Application - ValutaTrade Hub"
 authors = ["Artyom Malygin"]
 readme = "README.md"
+packages = [
+    {include = "valutatrade_hub"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 prettytable = "^3.17.0"
-
+prompt = "^0.4.1"
+requests = "^2.31.0"
+aiohttp = "^3.9.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.14.7"
@@ -17,7 +22,8 @@ ruff = "^0.14.7"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-packages = [{include = "finalproject_malygin_m25_555"}]
+
 
 [tool.poetry.scripts]
-project = "finalproject_malygin_m25_555.main:main"
+project = "valutatrade_hub.cli.interface:cli"
+wallet = "valutatrade_hub.cli.interface:cli"
