@@ -308,7 +308,7 @@ def get_rate(frm: str, to: str) -> str:
     try:
         get_currency(frm)
         get_currency(to)
-    except CurrencyNotFoundError as e:
+    except CurrencyNotFoundError:
         raise
 
     try:

@@ -195,7 +195,7 @@ def cli_command(required_args: Optional[List[str]] = None,
             except ValueError as e:
                 print(f"🚫 {str(e)}")
             except InsufficientFundsError as e:
-                print(f"💰 Недостаточно средств!")
+                print("💰 Недостаточно средств!")
                 print(f"   Доступно: {e.available:.2f} {e.code}")
                 print(f"   Требуется: {e.required:.2f} {e.code}")
             except RateNotFoundError as e:

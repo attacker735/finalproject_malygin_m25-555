@@ -2,7 +2,7 @@ from __future__ import annotations
 import hashlib
 from dataclasses import dataclass
 from datetime import datetime
-from typing import Dict, List, Optional, Any
+from typing import Dict, Optional, Any
 from copy import deepcopy
 
 from valutatrade_hub.core.exceptions import (
